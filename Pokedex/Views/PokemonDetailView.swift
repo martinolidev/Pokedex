@@ -14,7 +14,7 @@ struct PokemonDetailView: View {
             AbilitiesView()
             TypesView()
             GenInfoView()
-            
+            GenderView()
         }
         .padding()
     }
