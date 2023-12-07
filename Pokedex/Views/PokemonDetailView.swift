@@ -11,10 +11,10 @@ struct PokemonDetailView: View {
     var body: some View {
         VStack {
             NameDescriptionView()
-            AbilitiesView()
-            TypesView()
             GenInfoView()
+            TypesView()
             GenderView()
+            AbilitiesView()
         }
         .padding()
     }
