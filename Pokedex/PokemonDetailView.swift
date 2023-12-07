@@ -103,6 +103,30 @@ struct PokemonDetailView: View {
                     )
                     .foregroundStyle(Color.cyan)
             }
+            
+            VStack {
+                let abilities = ["Steadfast", "Inner-focus", "Justified"]
+                Text("Abilities")
+                    .font(.system(size: 30))
+                    .bold()
+                
+                ScrollView(.horizontal) {
+                    HStack(spacing: 20) {
+                        ForEach(abilities, id: \.self) {
+                            abilities in
+                            RoundedRectangle(cornerRadius: 16)
+                                .frame(width: 150, height: 50)
+                                .overlay(
+                                    Text(abilities)
+                                        .foregroundStyle(Color.white)
+                                        .bold()
+                                )
+                                .foregroundStyle(Color.red)
+                        }
+                    }
+                    .font(.system(size: 25))
+                }
+            }
         }
         .padding()
     }
