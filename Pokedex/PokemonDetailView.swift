@@ -52,7 +52,7 @@ struct PokemonDetailView: View {
                         .frame(width: 80, height: 30)
                 }
             }
-            
+            //abilities
             VStack {
                 Text("Gender's")
                     .bold()
