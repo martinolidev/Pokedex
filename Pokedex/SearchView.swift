@@ -35,5 +35,5 @@ struct SearchView: View {
 }
 
 #Preview {
-    SearchView()
+    ContentView()
 }
