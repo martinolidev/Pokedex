@@ -28,6 +28,7 @@ struct PokemonDetailView: View {
                 Text("Un Lucario bien entrenado es capaz de emitir ondas que le permiten percibir la presencia y los sentimientos de un individuo incluso a 1 km.")
             }
             
+            //type info
             VStack {
                 Text("Type")
                     .bold()
@@ -45,6 +46,30 @@ struct PokemonDetailView: View {
                         .foregroundStyle(Color.gray)
                         .overlay(
                             Text("Steel")
+                                .foregroundStyle(Color.white)
+                                .bold()
+                        )
+                        .frame(width: 80, height: 30)
+                }
+            }
+            
+            VStack {
+                Text("Gender's")
+                    .bold()
+                    .font(.system(size: 30))
+                HStack {
+                    RoundedRectangle(cornerRadius: 16)
+                        .foregroundStyle(Color.blue)
+                        .overlay(
+                            Text("Male")
+                                .foregroundStyle(Color.white)
+                                .bold()
+                        )
+                        .frame(width: 80, height: 30)
+                    RoundedRectangle(cornerRadius: 16)
+                        .foregroundStyle(Color.pink)
+                        .overlay(
+                            Text("Female")
                                 .foregroundStyle(Color.white)
                                 .bold()
                         )
