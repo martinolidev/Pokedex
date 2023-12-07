@@ -9,7 +9,29 @@ import SwiftUI
 
 struct GenderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Gender's")
+                .font(.system(size: 30))
+                .bold()
+            HStack {
+                RoundedRectangle(cornerRadius: 16)
+                    .frame(width: 80, height: 30)
+                    .foregroundStyle(Color.blue)
+                    .overlay(
+                        Text("Male")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                    )
+                RoundedRectangle(cornerRadius: 16)
+                    .frame(width: 80, height: 30)
+                    .foregroundStyle(Color.pink)
+                    .overlay(
+                        Text("Female")
+                            .foregroundStyle(Color.white)
+                            .bold()
+                    )
+            }
+        }
     }
 }
 
