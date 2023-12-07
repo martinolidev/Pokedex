@@ -10,30 +10,6 @@ import SwiftUI
 struct PokemonDetailView: View {
     var body: some View {
         VStack {
-            //abilities
-            VStack {
-                Text("Gender's")
-                    .bold()
-                    .font(.system(size: 30))
-                HStack {
-                    RoundedRectangle(cornerRadius: 16)
-                        .foregroundStyle(Color.blue)
-                        .overlay(
-                            Text("Male")
-                                .foregroundStyle(Color.white)
-                                .bold()
-                        )
-                        .frame(width: 80, height: 30)
-                    RoundedRectangle(cornerRadius: 16)
-                        .foregroundStyle(Color.pink)
-                        .overlay(
-                            Text("Female")
-                                .foregroundStyle(Color.white)
-                                .bold()
-                        )
-                        .frame(width: 80, height: 30)
-                }
-            }
             
             VStack {
                 Text("General Information")
