@@ -9,7 +9,14 @@ import SwiftUI
 
 struct PokemonDetailView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack(spacing: 50) {
+                Text("Lucario")
+                Text("N.° 0448")
+            }
+            .bold()
+            .font(.system(size: 30))
+        }
     }
 }
 

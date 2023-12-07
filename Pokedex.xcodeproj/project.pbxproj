@@ -15,6 +15,7 @@
 		88EC19B72B22338400E2E2CF /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC19B62B22338400E2E2CF /* PokedexUITests.swift */; };
 		88EC19B92B22338400E2E2CF /* PokedexUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC19B82B22338400E2E2CF /* PokedexUITestsLaunchTests.swift */; };
 		88EC19C62B2235B600E2E2CF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC19C52B2235B600E2E2CF /* SearchView.swift */; };
+		88EC19C82B22366A00E2E2CF /* PokemonDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EC19C72B22366A00E2E2CF /* PokemonDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		88EC19B62B22338400E2E2CF /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		88EC19B82B22338400E2E2CF /* PokedexUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88EC19C52B2235B600E2E2CF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		88EC19C72B22366A00E2E2CF /* PokemonDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				88EC199B2B22338300E2E2CF /* PokedexApp.swift */,
 				88EC199D2B22338300E2E2CF /* ContentView.swift */,
 				88EC19C52B2235B600E2E2CF /* SearchView.swift */,
+				88EC19C72B22366A00E2E2CF /* PokemonDetailView.swift */,
 				88EC199F2B22338400E2E2CF /* Assets.xcassets */,
 				88EC19A12B22338400E2E2CF /* Preview Content */,
 			);
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EC199E2B22338300E2E2CF /* ContentView.swift in Sources */,
+				88EC19C82B22366A00E2E2CF /* PokemonDetailView.swift in Sources */,
 				88EC19C62B2235B600E2E2CF /* SearchView.swift in Sources */,
 				88EC199C2B22338300E2E2CF /* PokedexApp.swift in Sources */,
 			);
