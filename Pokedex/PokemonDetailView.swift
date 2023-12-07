@@ -10,6 +10,10 @@ import SwiftUI
 struct PokemonDetailView: View {
     var body: some View {
         VStack {
+            NameDescriptionView()
+            AbilitiesView()
+            TypesView()
+            GenInfoView()
             
         }
         .padding()
