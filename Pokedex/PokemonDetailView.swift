@@ -76,6 +76,13 @@ struct PokemonDetailView: View {
                         .frame(width: 80, height: 30)
                 }
             }
+            
+            VStack {
+                Text("General Information")
+                    .bold()
+                    .font(.system(size: 30))
+                
+            }
         }
         .padding()
     }
