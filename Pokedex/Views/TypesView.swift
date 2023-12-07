@@ -8,28 +8,26 @@
 import SwiftUI
 
 struct TypesView: View {
+    
+    let types: [String] = ["Fight", "Steel"]
+    let colorRandom: [Color] = [.red, .pink, .cyan, .indigo, .blue]
     var body: some View {
         VStack {
             Text("Type")
                 .bold()
                 .font(.system(size: 30))
             HStack {
-                RoundedRectangle(cornerRadius: 16)
-                    .foregroundColor(.red)
-                    .overlay(
-                        Text("Fight")
-                            .foregroundStyle(Color.white)
-                            .bold()
-                    )
-                    .frame(width: 80, height: 30)
-                RoundedRectangle(cornerRadius: 16)
-                    .foregroundStyle(Color.gray)
-                    .overlay(
-                        Text("Steel")
-                            .foregroundStyle(Color.white)
-                            .bold()
-                    )
-                    .frame(width: 80, height: 30)
+                ForEach(types, id:\.self) {
+                    types in
+                    RoundedRectangle(cornerRadius: 16)
+                        .frame(width: 80, height: 30)
+                        .overlay(
+                            Text(types)
+                                .foregroundStyle(Color.white)
+                                .bold()
+                        )
+                        .foregroundColor(colorRandom.randomElement())
+                }
             }
         }
     }
