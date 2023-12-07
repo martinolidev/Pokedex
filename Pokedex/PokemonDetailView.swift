@@ -11,23 +11,6 @@ struct PokemonDetailView: View {
     var body: some View {
         VStack {
             
-            //name and id
-            HStack(spacing: 50) {
-                Text("Lucario")
-                Text("N.° 0448")
-            }
-            .bold()
-            .font(.system(size: 30))
-            
-            
-            //Description and image
-            HStack {
-                Image("placeholder")
-                    .resizable()
-                    .frame(width: 150, height: 150)
-                Text("Un Lucario bien entrenado es capaz de emitir ondas que le permiten percibir la presencia y los sentimientos de un individuo incluso a 1 km.")
-            }
-            
             //type info
             VStack {
                 Text("Type")
